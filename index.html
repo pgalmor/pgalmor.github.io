@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Reem Kufi' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
 	font-family: 'Rubik';
@@ -19,7 +20,7 @@ body {
     color: white;
     font-family: 'Reem Kufi';
 }
-.header button {
+.header a {
     border: none;
     border-radius: 4px;
     display: inline-block;
@@ -27,6 +28,7 @@ body {
     color: #f2f2f2;
     background-color: #04AA6D;
     text-align: center;
+    font-size: 15px;
     cursor: pointer;
     font-family: 'Reem Kufi';
     transition-duration: 0.4s;
@@ -86,6 +88,37 @@ body {
 	color: white;
 }
 
+a.btn {
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 10px 25px;
+    color: #f2f2f2;
+    background-color: #04C47E;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Reem Kufi';
+    transition-duration: 0.4s;
+}
+a.btn:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.linkedinIcon {
+	background: url("linkedin.png");
+    height: 5px;
+    width: 5px;
+    display: block;
+}
+
+.githubIcon {
+	background: url("github.png");
+    height: 5px;
+    width: 5px;
+    display: block;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Reem Kufi';
 }
@@ -97,14 +130,14 @@ h1, h2, h3, h4, h5, h6 {
 <div class="header">
 	<h1>POL GALAN</h1>
     <h2>Game Designer</h2>
-    <button>Hire me</button>
+    <a href="#hireme">Hire me</a>
 </div>
 <!-- TOP NAV -->
 <div class="topnav">
 	<a href="#about">Contact</a>
     <a href="#contact">Art</a>
     <a href="#news">Projects</a>
-    <a class="active" href="https://www.pgalmor.github.io/">Home</a>
+    <a class="active" href="https://pgalmor.github.io/">Home</a>
 </div>
 <div class="row">
   <!-- LEFT COLUMN -->
@@ -112,8 +145,8 @@ h1, h2, h3, h4, h5, h6 {
   	<div class="content left">
       <p style="font-size:14px;">Hi, my name is Pol and I'm a game designer and developer. Welcome to my personal website!</p>
       <div class="row">
-        <button>ln</button>
-        <button>gh</button>
+        <a class="btn" href="https://www.linkedin.com/in/pol-galan-i-morales-884a8a209"><i class="linkedinIcon"></i></a>
+        <a class="btn" href="https://github.com/pgalmor"><i class="githubIcon"></i></a>
       </div>
     </div>
   </div>
@@ -124,6 +157,7 @@ h1, h2, h3, h4, h5, h6 {
         <p>I'm hosted with GitHub Pages.</p>
     </div>
   </div>
-</dix>
+</div>
 </body>
 </html>
+
